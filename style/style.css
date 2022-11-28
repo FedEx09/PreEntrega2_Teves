@@ -1,0 +1,371 @@
+/** General*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(232, 215, 241);
+}
+
+header {
+    background-color: rgb(161, 103, 165);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logo {
+    border-radius: 50%;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(232, 236, 248);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+footer {
+    padding: 25px;
+    background-color: rgb(161, 103, 165);
+}
+
+
+/** Index */
+.hero {
+    height: 50vh;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.hero div img {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.card div {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card div a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: rgb(161, 103, 165);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+
+/**SERVICIOS*/
+.servicios{
+    height: calc(100vh - 232px);
+}
+.servicios h1{
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.parraf{
+    font-size: 1.2em;
+    padding: 0px 30px 50px 30px;
+    display: flex;
+    flex-direction: row;
+}
+.img_servicio{
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/** Producto*/
+.product_container { 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.product {
+    padding: 50px 0px 30px 0px;
+    width: 60%;
+}
+
+.product div {
+    padding: 20px 0px 0px 15px;
+}
+
+
+.imagen {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.texto {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.items {
+    width: 40%;
+    padding: 40px 0px 0px 0px;
+}
+
+.items h2 {
+    font-size: 2em;
+    position: absolute;
+    right: 280px;
+    color: black;
+}
+
+.items div {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 0px 15px;
+}
+
+.product h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+
+}
+
+
+/**NOSOTROS*/
+
+.nosotros{
+    height: calc(100vh - 232px);
+    display: flex;
+    flex-direction: column;
+}
+.nosotros h1{
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.izqder{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 50%;
+    padding:0px 30px 0px 30px;
+}
+
+.left p{
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+.rigth{
+    width: 50%;
+    padding: 0px 30px 0px 30px;
+}
+.rigth_text{
+    font-size: 1.2em;
+    padding-bottom: 30px;
+}
+
+.img_nosotros{
+    display: flex;
+    justify-content: center;
+    
+}
+/**.img_nosotros img{
+    width: 500px;
+    height: 500px;
+}*/
+
+/**CONTACTO*/
+
+html {
+    font: 300 100%/1.5 Ubuntu, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin: 0;
+    color: #8495a5;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+#contact-form {
+    height: calc(100vh - 332px);
+    max-width: 1208px;
+    max-width: 75.5rem;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#contact,
+label,
+input[name="submit"] {
+    position: relative;
+}
+
+label>span,
+input,
+textarea,
+button {
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+}
+
+label>span {
+    display: none;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font: 300 100%/1.2 Ubuntu, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input.invalid,
+textarea.invalid {
+    border-color: #d5144d;
+}
+
+textarea {
+    height: 6em;
+}
+
+input[type="submit"],
+button {
+    background: #a7cd80;
+    color: #333;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #91b36f;
+}
+
+@media screen and (min-width: 30em) {
+    #contact-form h2 {
+        margin-left: 26.3736%;
+        font-size: 2em;
+        line-height: 1.5;
+    }
+
+    label>span {
+        vertical-align: top;
+        display: inline-block;
+        width: 26.3736%;
+        padding: 0.5em;
+        border: 1px solid transparent;
+        text-align: right;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 73.6263%;
+        line-height: 1.5;
+    }
+
+    textarea {
+        height: 10em;
+    }
+
+    input[type="submit"],
+    button {
+        margin-left: 26.3736%;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    #contact-form {
+        text-align: justify;
+        line-height: 0;
+    }
+
+    #contact-form:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+
+    #contact-form h2 {
+        margin-left: 17.2661%;
+    }
+
+    #contact-form form,
+    #contact-form aside {
+        vertical-align: top;
+        display: inline-block;
+        width: 65.4676%;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    #contact-form aside {
+        width: 30.9353%;
+    }
+}
